@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Homepage</title>
-    </head>
 
-    <body>
-        <div>
-            <lu>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <style type="text/css">
+        * {
+            background-color: beige;
+        }
+
+        ul li {
+
+            list-style-image: url(./images/starClip.png);
+            list-style-position: outside;
+            font-family: 'Monospace';
+            font-style: oblique;
+            margin-left: -20px;
+            background-color: beige;
+
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: 'Trebuchet MS';
+            font-size: larger;
+            line-height: 30px;
+
+        }
+
+        p1 {
+            font-family: Impact;
+            font-size: large;
+        }
+
+        .clickThis{
+            text-box;
+            color:red;
+        }
+
+        button {
+            background-color: rgba(0, 255, 255, 0.151);
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <ul>
             <li><a href="/index.html">Home Page</a></li>
             <li><a href="/profile/about_me.html">About Me Page</a></li>
             <li><a href="/interests/professional/professional_goals.html">Professional Goals</a></li>
             <li><a href="/interests/entertainment/trips/best_holiday.html">Best Holiday</a></li>
             <li><a href="/interests/entertainment/music/music_recommendation.html">Music Recommendation</a></li>
             <li><a href="/interests/entertainment/movies/movie_recommendation.html">Movie Recommendation</a></li>
-            </lu>
-            <hr>
-        </div>
+        </ul>
+        <hr>
+    </div>
 
-        <h1>WELCOME TO THE HOMEPAGE OF HOMEWORK_1</h1>
-        <p1>Hello! This is my first proper homepage! :D</p1>
-        <div></div>
-        <img src="images/epicimage.jpg" alt="Fricken Epic Face" title="LeEpic" width="200px" height="200px"/>
-        <div></div>
+    <div>
+        <div>
+            <h1>WELCOME TO THE HOMEPAGE OF HOMEWORK_1</h1>
+            <p1>Hello! This is my first proper homepage! :D</p1>
+        </div>
+        
+        <img src="images/epicimage.jpg" alt="Fricken Epic Face" title="LeEpic" width="200px" height="200px" />
+        <br>
+        
         <button onclick="document.location='/profile/about_me.html'">Click Me</button>
-        <div class="footer">
-        <a href="/profile/about_me.html" target="_blank">No! Click Me!</a>
-        <hr>    
-        </div>
+        <br>
 
-        <div class="footer">
-            <p>Spring 2026</p>
-            <a href="mailto:victor.cavazos02@utrgv.edu">E-mail contact information</a>
-        </div>
-           
-    </body>
+        <a href="/profile/about_me.html" target="_blank"><span class="clickThis">No! Click Me!</span></a>
+        <hr>
+    </div>
+
+    <div class="footer">
+        <p>Spring 2026</p>
+        <a href="mailto:victor.cavazos02@utrgv.edu">E-mail contact information</a>
+    </div>
+
+</body>
 
 </html>

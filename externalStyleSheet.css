@@ -3,7 +3,7 @@
     background-color: beige;
     }
 
-ul li {
+.navigationList ul li{
 
     list-style-image: url(./images/starClip.png);
     list-style-position: outside;
@@ -18,7 +18,17 @@ ul li {
 
 }
 
+.footer {
+    text-shadow: bisque;
+    background-color: bisque;
+    font-family: 'Monospace';
+    font-size: medium;
+    white-space: pre;
+    box-shadow: 10px 5px 5px black;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
 
+}
 
 .centeredHeading {
     font-weight: bold;
@@ -30,8 +40,16 @@ ul li {
     align-items: center;
 }
 
-.centeredParagraph {
+.centeredParagraphImpact {
     font-family: Impact;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredParagraphAbout {
+    font-family: 'serif';
     font-size: large;
     display: flex;
     justify-content: center;
@@ -62,14 +80,20 @@ ul li {
     font-size: x-large;
 }
 
-.footer {
-    text-shadow: bisque;
-    background-color: bisque;
-    font-family: 'Monospace';
-    font-size: medium;
-    white-space: pre;
-    box-shadow: 10px 5px 5px black;
-    border-top: 5px solid grey;
-    border-bottom: 5px solid grey;
+.skillsList{
+    list-style-type:disc;
+    list-style-position:outside;
+    
+}
 
+
+.leftHeadingProfessional p1{
+    font-size:150%;
+    font-family:'Times New Roman';
+    font-weight:bolder;
+}
+
+.leftParagraphProfessional{
+    font-family:'times new roman';
+    font-size: large;
 }

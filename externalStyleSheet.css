@@ -80,7 +80,7 @@
     font-size: x-large;
 }
 
-.skillsList{
+.skillsList ul li{
     list-style-type:disc;
     list-style-position:outside;
     
@@ -106,4 +106,28 @@
 .tableProfessional td{
     background-color:rgb(113, 163, 113);
     text-align:center;
+}
+
+.holidayList ul li{
+    list-style-type:square;
+    list-style-position:outside;
+    
+}
+
+.lyricsStylized{
+    font-family: 'serif';
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid maroon;
+    border-left: 5px solid maroon;
+    border-top: 5px solid maroon;
+    border-right: 5px solid maroon;
+    border-style:groove;
+    padding-left:2px;
+    display:-webkit-inline-box;
+    margin-left:41%
+    
+    
 }

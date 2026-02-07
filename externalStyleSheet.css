@@ -1,115 +1,61 @@
-/* Wicked Cool CSS – upgraded visuals, smooth motion, still homework-safe 😎 */
-
-
-:root {
---bg: #0f1220;
---card: rgba(255,255,255,0.08);
---accent: #7cf7ff;
---accent2: #ff8bd1;
---text: #eaeaf0;
---muted: #aab0c3;
---glow: 0 10px 30px rgba(124,247,255,.35);
-}
-
 
 * {
-box-sizing: border-box;
-}
+    background-color: beige;
+    }
 
-
-body {
-margin: 0;
-min-height: 100vh;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-color: var(--text);
-background:
-radial-gradient(1200px 600px at 10% -10%, #1b1f45 0%, transparent 60%),
-radial-gradient(900px 500px at 110% 10%, #3a0f3a 0%, transparent 55%),
-linear-gradient(180deg, #0b0d1a, #0f1220);
-}
-
-
-/* ---------- Navigation (FIXED: readable, high contrast) ---------- */
 .navigationList ul li{
-list-style-image: none;
-list-style-position: outside;
-font-family: monospace;
-margin: 10px 0 10px -10px;
-padding: 12px 16px;
-background: linear-gradient(135deg, #1e223f, #14172b);
-color: #f5f7ff;
-border-radius: 12px;
-box-shadow: 0 8px 20px rgba(0,0,0,.45);
-transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+
+    list-style-image: url(./images/starClip.png);
+    list-style-position: outside;
+    font-family: 'Monospace';
+    font-style: oblique;
+    margin-left: -20px;
+    margin-top:2px;
+    background-color: beige;
+    border-inline:solid;
+    box-shadow: 10px 5px 5px black;
+
+
 }
 
-
-.navigationList ul li:hover{
-transform: translateY(-2px);
-background: linear-gradient(135deg, #2b3199, #1b1f6b);
-box-shadow: 0 15px 35px rgba(0,0,0,.6);
-}
-
-
-.navigationList ul li a{
-color: #ffffff;
-text-decoration: none;
-}
-
-
-.navigationList ul li a:hover{
-text-decoration: underline;
-}
-
-
-.navigationList ul li:hover{
-transform: translateY(-4px) scale(1.02);
-box-shadow: 0 20px 45px rgba(124,247,255,.55);
-}
-
-
-/* ---------- Footer ---------- */
 .footer {
-background: linear-gradient(135deg, #1b1f45, #0f1220);
-color: var(--muted);
-font-family: monospace;
-padding: 16px;
-border-top: 3px solid var(--accent);
-border-bottom: 3px solid var(--accent2);
-box-shadow: inset 0 10px 25px rgba(0,0,0,.4);
+    text-shadow: bisque;
+    background-color: bisque;
+    font-family: 'Monospace';
+    font-size: medium;
+    white-space: pre;
+    box-shadow: 10px 5px 5px black;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+
 }
 
-
-/* ---------- Headings & Text ---------- */
 .centeredHeading {
-font-weight: 800;
-font-size: 2rem;
-letter-spacing: 1px;
-text-transform: uppercase;
-display: flex;
-justify-content: center;
-align-items: center;
-background: linear-gradient(90deg, var(--accent), var(--accent2));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    font-size: larger;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.centeredParagraphImpact {
+    font-family: Impact;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.centeredParagraphImpact,
 .centeredParagraphAbout {
-font-size: 1.1rem;
-color: var(--text);
-display: flex;
-justify-content: center;
-align-items: center;
+    font-family: 'serif';
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.centeredParagraphImpact { font-family: Impact, sans-serif; }
-.centeredParagraphAbout { font-family: serif; }
-
-
-/* ---------- Images ---------- */
 .centeredImage img{
 border-radius: 18px;
 box-shadow: 0 25px 60px rgba(0,0,0,.6);
@@ -123,90 +69,74 @@ box-shadow: 0 35px 80px rgba(124,247,255,.45);
 }
 
 
-/* ---------- Buttons / Clickables ---------- */
-.noClickMe {
-font-size: 1.5rem;
-color: #ff5c5c;
-display: flex;
-justify-content: flex-end;
-text-shadow: 0 0 12px rgba(255,92,92,.6);
-}
 
+.noClickMe {
+    text-box;
+    font-size: x-large;
+    color: red;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+}
 
 .clickMe {
-width: 300px;
-height: 52px;
-font-size: 1.2rem;
-border: none;
-border-radius: 999px;
-cursor: pointer;
-color: #081114;
-background: linear-gradient(135deg, var(--accent), var(--accent2));
-box-shadow: 0 15px 40px rgba(0,0,0,.4);
-transition: transform .2s ease, box-shadow .2s ease;
+    background-color: rgba(0, 255, 255, 0.151);
+    width: 300px;
+    height: 50px;
+    font-size: x-large;
+}
+
+.skillsList ul li{
+    list-style-type:disc;
+    list-style-position:outside;
+    
 }
 
 
-.clickMe:hover{
-transform: translateY(-3px) scale(1.03);
-box-shadow: 0 25px 60px rgba(124,247,255,.55);
-}
-
-
-/* ---------- Lists ---------- */
-.skillsList ul li,
-.holidayList ul li{
-margin: 6px 0;
-color: var(--text);
-}
-
-
-/* ---------- Professional Section ---------- */
 .leftHeadingProfessional {
-font-size: 1.6rem;
-font-family: "Times New Roman", serif;
-color: var(--accent);
+    font-size:x-large;
+    font-family:'Times New Roman';
 }
-
 
 .leftParagraphProfessional{
-font-family: "Times New Roman", serif;
-font-size: 1.05rem;
-color: var(--muted);
+    font-family:'times new roman';
+    font-size: large;
 }
-
 
 .tableProfessional th{
-background: linear-gradient(135deg, #444, #222);
-color: white;
-padding: 10px;
-}
+    background-color:grey;
+    text-align:center;
 
+}
 
 .tableProfessional td{
-background: linear-gradient(135deg, #5f8f5f, #3f6f3f);
-color: #061306;
-padding: 10px;
+    background-color:rgb(113, 163, 113);
+    text-align:center;
 }
 
+.holidayList ul li{
+    list-style-type:square;
+    list-style-position:outside;
+    
+}
 
 /* ---------- Lyrics / Fun Styling ---------- */
 .lyricsStylized{
-font-family: serif;
-font-size: 1.1rem;
-color: var(--text);
-border-radius: 16px;
-padding: 14px 18px;
-margin: 20px auto;
-width: fit-content;
-background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.02));
-border: 2px solid rgba(255,255,255,.2);
-box-shadow: var(--glow);
-animation: floaty 4s ease-in-out infinite;
+    font-family: serif;
+    font-size: 1.1rem;
+    color: var(--text);
+    border-radius: 16px;
+    padding: 14px 18px;
+    margin: 20px auto;
+    width: fit-content;
+    background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.02));
+    border: 2px solid rgba(255,255,255,.2);
+    box-shadow: var(--glow);
+    animation: floaty 4s ease-in-out infinite;
 }
 
-
 @keyframes floaty {
-0%,100% { transform: translateY(0); }
-50% { transform: translateY(-6px); }
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
 }

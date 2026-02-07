@@ -87,13 +87,23 @@
 }
 
 
-.leftHeadingProfessional p1{
-    font-size:150%;
+.leftHeadingProfessional {
+    font-size:x-large;
     font-family:'Times New Roman';
-    font-weight:bolder;
 }
 
 .leftParagraphProfessional{
     font-family:'times new roman';
     font-size: large;
+}
+
+.tableProfessional th{
+    background-color:grey;
+    text-align:center;
+
+}
+
+.tableProfessional td{
+    background-color:rgb(113, 163, 113);
+    text-align:center;
 }
